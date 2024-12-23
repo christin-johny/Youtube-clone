@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 50px;
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.sidebar .nav-link span {
+    padding: 0 10px;
+    vertical-align: bottom;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.sidebar .nav-footer {
+    padding-right: 30px;
+    padding-left: 1rem;
+}
+
+.sidebar .nav-footer .nav-link {
+    padding: 0;
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+    }
+}
+
+.page-content {
+    margin-left: 250px;
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        margin-left: 0;
+    }
+}
+
+.chip-container {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 10px 15px;
+    z-index: 99;
+}
+
+.chip-container .chip {
+    margin-right: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: rgb(238, 238, 236);
+    border: 1px solid rgba(238, 238, 236, 0.1);
+    white-space: nowrap;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.chip-container .chip.active {
+    background-color: rgb(161, 165, 169);
+}
+
+.slick {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.chip-container .slick-slide > div {
+    margin: 0 10px;
+}
+
+
+.row a{
+    display: block;
+    text-decoration: none;
+}
+.card-vedio-details img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-vedio-details h4 {
+font-size: 16px;
+font-weight: bold;
+color: black;
+overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis;
+}
+
+.card-vedio-details div {
+    font-size: 13px;
+    color: grey;
+}
